@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap works</title>
+    <!--Font Awesome link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+    <!--Bootstrap css link-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--custom css link-->
+        <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm logs">
+  <div class="container-fluid">
+    <a class="navbar-brand text-dark fs-2" href="#">Anime Cards</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto gap-3 fs-5">
+        <li class="nav-item">
+          <a class="nav-link active  text-dark" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-dark" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-dark" href="#Blogs">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-dark" href="./login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <div class="slide-container">
+        <div class="slide">
+            <img src="./images/slide1.jpg" alt="">
+            <div class="caption">Slider 1</div>
+        </div>
+        <div class="slide">
+            <img src="./images/slide2.jpg" alt="">
+            <div class="caption">Slider 2</div>
+        </div>
+        <div class="slide">
+            <img src="./images/slide3.jpg" alt="">
+            <div class="caption">Slider 3</div>
+        </div>
+        <div class="slide">
+            <img src="./images/slide4.jpg" alt="">
+            <div class="caption">Slider 4</div>
+        </div> 
+        <span class="arrow prev" onclick="controller(-1)">&#10094;</span>
+        <span class="arrow next" onclick="controller(1)">&#10095;</span>
+    </div>
+    <!-- About Section -->
+  <div class="about-container" id="About">
+    <img src="./images/loki.jpg" alt="Profile Image">
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>Hi, I’m Yama Lokesh Reddy, a passionate and dedicated Frontend Developer with a strong eye 
+        for design and detail. I specialize in crafting responsive, user-friendly websites that blend 
+        functionality with aesthetics. With a deep understanding of HTML, CSS, JavaScript, and modern 
+        frameworks, I strive to build web interfaces that not only look good but also offer a seamless 
+        user experience. I enjoy turning complex problems into clean, elegant code. Whether it’s developing 
+        from scratch or improving an existing UI, my goal is to ensure that every pixel and interaction is 
+        purposeful. I believe in writing efficient, maintainable code and staying updated with the latest 
+        trends in frontend technologies.</p>
+        <a href="#banner" class="btn1">Read More</a>
+      <div class="social-icons">
+        <a href="https://github.com/lokeshreddyyama" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/lokesh-reddy-yama-88863831a/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <a href="#contact" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="container"  id="Blogs" style="display: flex; justify-content:center; align-items:center; gap: 30px; flex-wrap: wrap; margin-right:80px;">
+    <div class="card border border-info mt-3" id="btn1" style="width: 18rem;">
+  <img src="./images/Lelouch Lamperouge.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Lelouch Lamperouge</h5>
+    <p class="card-text">A brilliant exiled prince who gains the power of Geass allowing him to command
+       anyone to obey his orders. He leads a masked rebellion against the Britannian Empire to create a better world for his sister.</p>
+    <a href="./button.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info mt-3"  style="width: 18rem;">
+  <img src="./images/Monkey D Luffy - Copy.jpg"class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Monkey D. Luffy </h5>
+    <p class="card-text">the cheerful and fearless captain of the Straw Hat Pirates. He dreams of becoming
+      the Pirate King by finding the legendary treasure known as One Piece, using his rubber like powers to overcome any challenge.</p>
+    <a href="./monkey-d-luffy.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info mt-3" style="width: 18rem;">
+  <img src="./images/Levi Ackerman.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Levi Ackerman</h5>
+    <p class="card-text">Levi Ackerman is humanity’s strongest soldier and captain of the elite 
+      Survey Corps squad.He is known for exceptional combat skills, strict discipline, and deep care for his comrades.</p>
+    <a href="./levi-ackerman.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info mt-3" style="width: 18rem;">
+  <img src="./images/Light Yagami.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Light Yagami</h5>
+    <p class="card-text"> The main protagonist of Death Note a highly intelligent and talented 
+      high school student who discovers a supernatural notebook that allows him to kill anyone by writing their name. </p>
+    <a href="./light-yagami.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info" style="width: 18rem;">
+  <img src="./images/Naruto Uzumaki.png" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Naruto Uzumaki</h5>
+    <p class="card-text">An optimistic and resilient ninja shunned for hosting the Nine-Tails.
+Through hard work and friendship, he strives to become Hokage.</p>
+    <a href="./naruto-uzumaki.html" class="btn btn-info"style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info" style="width: 18rem;">
+  <img src="./images/Eren Yeager.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Eren Yeager</h5>
+    <p class="card-text">A passionate youth transformed by tragedy and secret Titan powers.
+His pursuit of freedom blurs the line between hero and villain.</p>
+    <a href="./eren-yeager.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info" style="width: 18rem;">
+  <img src="./images/Saitama.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Saitama </h5>
+    <p class="card-text">A laid back man who defeats any enemy with a single punch.
+He searches for excitement while staying true to humble heroism.</p>
+    <a href="./Saitama.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info" style="width: 18rem;">
+  <img src="./images/Mikasa Ackerman.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Mikasa Ackerman</h5>
+    <p class="card-text">A skilled and stoic fighter devoted to protecting her adoptive brother Eren.
+Strength forged from loss guides her throughout the Titan.</p>
+    <a href="./mikasa-ackerman.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info mb-3" style="width: 18rem;">
+  <img src="./images/Itachi Uchiha.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Itachi Uchiha </h5>
+    <p class="card-text">A prodigy ninja whose sacrifices conceal a heart of deep loyalty.
+Misunderstood as a villain, his redemption story is profound.</p>
+    <a href="./Itachi-uchiha.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info mb-3" style="width: 18rem;">
+  <img src="./images/Sakura Haruno.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Sakura Haruno</h5>
+    <p class="card-text">A once insecure ninja who grows into a powerful medic and fighter.
+Her journey is marked by self improvement and steadfast.</p>
+    <a href="./sakura-haruno.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info mb-3" style="width: 18rem;">
+  <img src="./images/Jinshi.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Jinshi</h5>
+    <p class="card-text">A mysterious and charming noble featured in 2025 anime, known for his political intrigue and emotional depth.</p>
+    <a href="./jinshi.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+<div class="card border border-info mb-3" style="width: 18rem;">
+  <img src="./images/Haruka Sakura.jpg" class="card-img-top" alt="...">
+  <div class="card-body text-light card1">
+    <h5 class="card-title text-warning">Haruka Sakura</h5>
+    <p class="card-text">Recognized for his resilience and fighting spirit, Haruka inspires those around him with unwavering determination.</p>
+    <a href="./haruka-sakura.html" class="btn btn-info" style="width: 250px;">Read More</a>
+  </div>
+</div>
+</div>
+    <!--Bootstrap Js script-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
+   <script src="./js/script.js"></script>
+  </body>
+</html>

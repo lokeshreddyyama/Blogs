@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logs {
+    background-color: rgb(11, 180, 242);
+    font-weight: 500;
+}
+body {
+    margin: 0;
+    background-color: rgb(5, 5, 51);
+}
+.slide-container {
+    position: relative;
+    width: 100% ;
+}
+.slide img{
+    width: 100%;
+    height: 40vh;
+    padding: 10px 0px;
+}
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    color: black;
+    background-color: aliceblue;
+    padding: 8px 20px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.next {
+    right:10px;
+}
+.prev {
+    left:10px;
+}
+.caption {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding:15px 0px;
+}
+.slide {
+    display: block;
+}
+body {
+    background-color: rgb(3, 14, 54);
+}
+.forms{
+    width: 30%;
+    background-color:white;
+}
+.forms input {
+    border: 1px solid rgb(87, 84, 84);
+}
+.forms label {
+    font-size: 18px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+a hover {
+    color:rgb(8, 8, 118);
+}
+.card1{
+    background-color: rgb(3, 3, 42);
+}
+/* About Section */
+    .about-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      padding: 60px 10%;
+      flex-wrap: wrap;
+    }
+    .about-container img {
+      width: 280px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+       margin-left: 60px;
+    }
+     .btn1{
+      display: inline-block;
+      background: #05eaff;
+      color: #030708;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+       margin-left: 60px;
+    }
+    .about-content {
+      max-width: 700px;
+    }
+    .about-content h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #ffcc00;
+       margin-left: 60px;
+    }
+    .about-content p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-size: 16px;
+         color: #f5f5f5;
+         margin-left: 60px;
+    }
+    .social-icons {
+      margin-top: 15px;
+       margin-left: 60px;
+    }
+    .social-icons a {
+      color: #f5f5f5;
+      font-size: 22px;
+      margin-right: 15px;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ffcc00;
+    }
